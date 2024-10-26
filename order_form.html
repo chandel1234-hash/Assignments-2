@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pizza order form page for Pizza Delight.">
+    <meta name="keywords" content="pizza, order form, Georgian College">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="/order.css">
+</head>
+<body>
+    <main class="main">
+        <h1>Order Your Pizza</h1>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="pizza-type">Pizza Type:</label>
+            <select id="pizza-type" name="pizza-type">
+                <option value="margherita">Margherita</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="veggie">Veggie</option>
+            </select>
+
+            <label for="size">Size:</label>
+            <div class="size-options">
+                <label><input type="radio" name="size" value="small"> Small</label>
+                <label><input type="radio" name="size" value="medium"> Medium</label>
+                <label><input type="radio" name="size" value="large"> Large</label>
+            </div>
+
+            <label>Toppings:</label>
+            <div class="toppings">
+                <label><input type="checkbox" name="topping" value="cheese"> Extra Cheese</label>
+                <label><input type="checkbox" name="topping" value="pepperoni"> Pepperoni</label>
+                <label><input type="checkbox" name="topping" value="mushrooms"> Mushrooms</label>
+            </div>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+</body>
+</html>

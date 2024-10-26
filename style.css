@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Verdana', sans-serif;
+    width: 100%;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #444;
+    border-radius: 4px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.pizza-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.pizza-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.pizza-card:hover {
+    transform: scale(1.05);
+}
+
+.pizza-card h2 {
+    color: #007bff;
+}
+
+.order-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,100 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.main {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+    font-size: 2em;
+    color: #f76c6c;
+    margin-bottom: 20px;
+}
+
+
+form label {
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: left;
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+}
+
+form input[type="text"], form input[type="email"], form input[type="tel"],
+form select, .size-options label, .toppings label {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form select:focus {
+    border-color: #f76c6c;
+}
+
+
+.size-options, .toppings {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.size-options label, .toppings label {
+    background: #f7c7c7;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.size-options input[type="radio"], .toppings input[type="checkbox"] {
+    display: none;
+}
+
+.size-options input[type="radio"]:checked + label, 
+.toppings input[type="checkbox"]:checked + label {
+    background-color: #f76c6c;
+    color: #fff;
+}
+
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px 0;
+    width: 100%;
+    background: #f76c6c;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #d65a5a;
+}
+
